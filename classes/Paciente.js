@@ -2,14 +2,14 @@
 //marcarconsulta
 //receita
 
-
 //nome cpf maior que 18 anos e patologia
 
-class paciente {
-    constructor(nome, idade, consultaMarcada, medico){
-        this.nome = nome;
+export class Paciente {
+    constructor(nomeCompleto, idade, consultaMarcada, medico){
+        this.nomeCompleto = nomeCompleto;
         this.idade = idade;
         this.consultaMarcada = consultaMarcada;
         this.medico = medico
     }
 }
+

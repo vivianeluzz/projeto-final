@@ -2,7 +2,7 @@
 //marcar consulta
 //medico
 
-class Clinica {
+export class Clinica {
     constructor(type, name, marcarConsulta, medico){
         this.type = type;
         this.name = name;
@@ -10,3 +10,7 @@ class Clinica {
         this.medico = medico;
     }
 }
+
+consultaMarcada()
+
+
