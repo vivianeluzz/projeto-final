@@ -2,10 +2,17 @@
 //paciente
 //receita
 
-class Medico {
-    constructor(nome, consultaMarcada, receitaMedica){
-        this.nome = nome;
-        this.consultaMarcada = consultaMarcada
+export class Medico {
+    consultaMarcada = 0;
+
+    constructor(nomeMedico, nomePaciente, receitaMedica){
+        this.nomeMedico = nomeMedico;
+        this.nomePaciente = nomePaciente;
         this.receitaMedica = receitaMedica;
+    }
+
+    consultaMedica() {
+        this.consultaMarcada++;
+        this.consultaMedica += this.receitaMedica;
     }
 }

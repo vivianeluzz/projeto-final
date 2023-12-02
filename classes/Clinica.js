@@ -9,8 +9,9 @@ export class Clinica {
         this.marcarConsulta = marcarConsulta;
         this.medico = medico;
     }
+    consultaMarcada() {
+        console.log('Consulta marcada!')
+    }    
 }
-
-consultaMarcada()
 
 
