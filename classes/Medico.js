@@ -5,14 +5,22 @@
 export class Medico {
     consultaMarcada = 0;
 
-    constructor(nomeMedico, nomePaciente, receitaMedica){
+    constructor(nomeMedico){
         this.nomeMedico = nomeMedico;
-        this.nomePaciente = nomePaciente;
-        this.receitaMedica = receitaMedica;
     }
 
-    consultaMedica() {
-        this.consultaMarcada++;
-        this.consultaMedica += this.receitaMedica;
+    consultaMedica(paciente) {
+        paciente.consultaMarcada = true;
+        console.log(`Consulta realizada por ${this.nomeMedico} para ${paciente.nomeCompleto}`);
+    }
+
+    liberarReceita(paciente) {
+        if (paciente.consultaMarcada) {
+            paciente.receitaLiberada = true;
+
+            console.log(`Receita liberada para ${paciente.nomeCompleto}`);
+        } else {
+            console.log(`Não é possível liberar a receita para ${paciente.nomeCompleto}. Consulta não agendada.`);
+        }
     }
 }

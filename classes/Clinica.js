@@ -3,15 +3,15 @@
 //medico
 
 export class Clinica {
-    constructor(type, name, marcarConsulta, medico){
+
+    constructor(type){
         this.type = type;
-        this.name = name;
-        this.marcarConsulta = marcarConsulta;
-        this.medico = medico;
     }
+    
     consultaMarcada() {
         console.log('Consulta marcada!')
     }    
 }
+
 
 

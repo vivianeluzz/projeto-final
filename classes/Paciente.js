@@ -1,30 +1,32 @@
 //medico
 //marcarconsulta
 //receita
-
 //nome cpf maior que 18 anos e patologia
 
 import { Medico } from './Medico.js'
 export class Paciente {
 
+    nomeCompleto;
+    idade;
+    medico;
     consultaMarcada = 0;
+    receitaLiberada = 0;
+    receita = '';
 
-    constructor(nomeCompleto, idade, medico){
+    static pacientes = [];
+
+    // consultaMarcada = 0;
+
+    constructor(nomeCompleto, idade, medico) {
         this.nomeCompleto = nomeCompleto;
         this.idade = idade;
-        this.medico = medico
+        this.medico = medico;
+        Paciente.pacientes.push({nomeCompleto, idade, medico: medico ? medico.nomeMedico : null});
     }
 
-    // requestPaciente(paciente, senha){
-    //     if(senha !== this.senha){
-    //         console.log('Senha inválida');
-    //         return;
-    //     }
-    // }
-
-    consultaMarcada(idade) {
-        if(idade >= 18) {
-            this.consultaMarcada
+    consultaMarcada() {
+        if(this.idade >= 18) {
+            this.consultaMarcada++;
     
         } else {
             throw "Consulta só pode ser marcada se a idade for acima de 18 anos"
@@ -35,5 +37,27 @@ export class Paciente {
             return
         }
     } 
-}
 
+    agendarConsulta() {
+       if (this.medico) {
+        this.medico.consultaMedica(this);
+       } else {
+        console.log('Paciente não marcou consulta');
+       }
+    }
+
+    liberarReceita() {
+        if(this.medico) {
+           this.medico.liberarReceita(this);
+        } else {
+            console.log("Paciente");
+        }  
+    } 
+} 
+
+    // requestPaciente(paciente, senha){
+    //     if(senha !== this.senha){
+    //         console.log('Senha inválida');
+    //         return;
+    //     }
+    // }
