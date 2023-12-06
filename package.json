@@ -1,6 +1,6 @@
 {
   "name": "projeto-final-viviane-luz",
-  "type":"module",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/vivianeluzz/projeto-final/issues"
   },
-  "homepage": "https://github.com/vivianeluzz/projeto-final#readme"
+  "homepage": "https://github.com/vivianeluzz/projeto-final#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }

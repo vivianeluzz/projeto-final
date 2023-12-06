@@ -10,15 +10,21 @@ export class Medico {
     }
 
     consultaMedica(paciente) {
-        paciente.consultaMarcada = true;
-        console.log(`Consulta realizada por ${this.nomeMedico} para ${paciente.nomeCompleto}`);
+        this.consultaMarcada++;
+        this.pacientes.push(paciente);
+        console.log(`Consulta marcada com sucesso!`);
+        paciente.exibirInformacoes();
+
+        // console.log(`Consulta realizada por ${this.nomeMedico} para ${paciente.nomeCompleto}`);
     }
 
     liberarReceita(paciente) {
-        if (paciente.consultaMarcada) {
-            paciente.receitaLiberada = true;
+        if (this.pacientes.includes(paciente)) {
+            
+            console.log('Receita liberada para o uso de óleo CDB.');
+            console.log('Receita:', paciente.liberarReceita());
 
-            console.log(`Receita liberada para ${paciente.nomeCompleto}`);
+            // console.log(`Receita liberada para ${paciente.nomeCompleto}`);
         } else {
             console.log(`Não é possível liberar a receita para ${paciente.nomeCompleto}. Consulta não agendada.`);
         }

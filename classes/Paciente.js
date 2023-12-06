@@ -5,28 +5,36 @@
 
 import { Medico } from './Medico.js'
 export class Paciente {
-
     nomeCompleto;
     idade;
+    email;
     medico;
     consultaMarcada = 0;
     receitaLiberada = 0;
-    receita = '';
+    receita = [];
 
     static pacientes = [];
 
-    // consultaMarcada = 0;
-
-    constructor(nomeCompleto, idade, medico) {
+    constructor(nomeCompleto, idade, email, medico) {
         this.nomeCompleto = nomeCompleto;
         this.idade = idade;
+        this.email = email;
         this.medico = medico;
-        Paciente.pacientes.push({nomeCompleto, idade, medico: medico ? medico.nomeMedico : null});
+        Paciente.pacientes.push({nomeCompleto, idade, email, medico: medico ? medico.nomeMedico : null});
     }
 
-    consultaMarcada() {
+    // get receita() {
+    //     return this.receita;
+    // }
+
+    // set receita(newReceita) {
+    //     this.receita = newReceita;
+    // }
+
+    marcarConsulta() {
         if(this.idade >= 18) {
             this.consultaMarcada++;
+            console.log('Consulta marcada com sucesso');
     
         } else {
             throw "Consulta só pode ser marcada se a idade for acima de 18 anos"
@@ -34,25 +42,48 @@ export class Paciente {
 
         if(!(Medico instanceof Medico)){
             console.log("O parâmetro é inválido")
-            return
         }
     } 
 
     agendarConsulta() {
-       if (this.medico) {
-        this.medico.consultaMedica(this);
+       if (this.numeroConsultas > 0) {
+        if (this.medico) {
+            this.medico.consultaMedica(this);
+        } else {
+            console.log('Paciente não marcou consulta')
+        }
        } else {
-        console.log('Paciente não marcou consulta');
+            console.log('Médico não possui paciente')
        }
     }
 
     liberarReceita() {
-        if(this.medico) {
-           this.medico.liberarReceita(this);
-        } else {
-            console.log("Paciente");
-        }  
+        if(this.numeroConsultas > 0) {
+           if (this.medico) {
+            const novaReceita = `Receita para uso de óleo de CDB - ${new Date().toLocaleDateString()}`;
+            this.receitas.push(novaReceita);
+                console.log('Receita liberada para o uso de óleo CDB.');
+                console.log('Receita:', novaReceita);
+            // console.log(`Receita liberada para paciente ${this.paciente1}`);
+           } else {
+            console.log(`Paciente não agendou ${this.nomeCompleto}`);
+           }
+        }
     } 
+
+    novaReceita() {
+        const novaReceita = `Nova receita - ${new Date().toLocaleDateString()}`;
+        this.receita.push(novaReceita);
+        console.log('Nova receita criada:');
+        console.log('Receita:', novaReceita);
+    }
+
+    exibirInformacoes() {
+        console.log('Paciente:');
+        console.log('Nome Completo:', this.nomeCompleto);
+        console.log('Idade:', this.idade);
+        console.log('Médico:', this.medico ? this.medico.nomeMedico : 'Nenhum médico atribuído.');
+    }
 } 
 
     // requestPaciente(paciente, senha){
