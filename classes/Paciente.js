@@ -3,7 +3,6 @@
 //receita
 //nome cpf maior que 18 anos e patologia
 
-import { Medico } from './Medico.js'
 export class Paciente {
     nomeCompleto;
     idade;
@@ -23,38 +22,28 @@ export class Paciente {
         Paciente.pacientes.push({nomeCompleto, idade, email, medico: medico ? medico.nomeMedico : null});
     }
 
-    // get receita() {
-    //     return this.receita;
-    // }
-
-    // set receita(newReceita) {
-    //     this.receita = newReceita;
-    // }
 
     marcarConsulta() {
         if(this.idade >= 18) {
             this.consultaMarcada++;
-            console.log('Consulta marcada com sucesso');
+            return 'Consulta marcada com sucesso';
     
         } else {
             throw "Consulta só pode ser marcada se a idade for acima de 18 anos"
         }
 
-        if(!(Medico instanceof Medico)){
-            console.log("O parâmetro é inválido")
-        }
+        // if(!(Medico instanceof Medico)){
+        //     console.log("O parâmetro é inválido")
+        // }
     } 
 
     agendarConsulta() {
-       if (this.numeroConsultas > 0) {
-        if (this.medico) {
-            this.medico.consultaMedica(this);
-        } else {
-            console.log('Paciente não marcou consulta')
-        }
-       } else {
-            console.log('Médico não possui paciente')
-       }
+       if (this.numeroConsultas === 0) {
+            throw new Error('Paciente não marcou consulta');
+    }
+    //    } else {
+    //         console.log('Médico não possui paciente');
+    //    }
     }
 
     liberarReceita() {
