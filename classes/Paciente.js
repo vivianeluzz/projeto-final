@@ -61,7 +61,8 @@ export class Paciente {
         if(this.numeroConsultas > 0) {
            if (this.medico) {
             const novaReceita = `Receita para uso de óleo de CDB - ${new Date().toLocaleDateString()}`;
-            this.receitas.push(novaReceita);
+            this.receita.push(novaReceita);
+            this.receitaLiberada++;
                 console.log('Receita liberada para o uso de óleo CDB.');
                 console.log('Receita:', novaReceita);
             // console.log(`Receita liberada para paciente ${this.paciente1}`);
