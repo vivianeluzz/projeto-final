@@ -91,8 +91,6 @@ describe('Paciente', () => {
 
         expect(receitasDepois).toBe(receitasAntes + 1); // Verifica se uma nova receita foi adicionada
         expect(consoleSpy).toHaveBeenCalledWith('Nova receita criada:'); // Verifica se a mensagem correta foi impressa no console
-        // expect(consoleSpy).toHaveBeenCalledWith(expect.stringContaining('Receita: Nova receita - ')); // Verifica se a receita contém a data correta
     });
 
 });
-

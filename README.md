@@ -1,4 +1,5 @@
-# Olá, eu sou Viviane Luz e esse é o meu projeto final conclusão do curso de imersão javascript Reprograma! 
+# Olá, eu sou Viviane Luz 
+Projeto final conclusão do curso de imersão javascript Reprograma! 
 
 # Imersão JavaScript Projeto-final 🚀 Descrição#
 <h1 align="center"> Clínica Green Care</h1>
@@ -33,7 +34,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 $ git clone <https://github.com/https://github.com/vivianeluzz>
 
 ## Rodando os testes
-Para rodar os testes, rode o seguinte comando
+Para rodar os testes, rode o seguinte comando:
 
 ```bash
   cd projeto/projeto-final-viviane-luz

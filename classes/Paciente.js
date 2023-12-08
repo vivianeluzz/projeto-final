@@ -1,8 +1,3 @@
-//medico
-//marcarconsulta
-//receita
-//nome cpf maior que 18 anos e patologia
-
 export class Paciente {
     nomeCompleto;
     idade;
@@ -11,8 +6,6 @@ export class Paciente {
     consultaMarcada = 0;
     receitaLiberada = 0;
     receita = [];
-
-    static pacientes = [];
 
     constructor(nomeCompleto, idade, email, medico) {
         this.nomeCompleto = nomeCompleto;
