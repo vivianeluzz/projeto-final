@@ -1,20 +1,23 @@
-# Olá, eu sou Viviane Luz 
-Projeto final conclusão do curso de imersão javascript Reprograma! 
+# Olá, eu sou Viviane Luz e esse é o projeto de conclusão Reprograma.
 
 # Imersão JavaScript Projeto-final 🚀 Descrição#
 <h1 align="center"> Clínica Green Care</h1>
+Projeto final de conclusão do curso de imersão javaScript Reprograma! 
 
-<p align="center">É uma ma plataforma de (site) de agendamento para tratamento terapêutico com especialitas nesta aréa e liberação de receita para a compra do uso do medicamento medicinal.
-É um clínica direcionada para tratamento terapeutico com autorização e prescrição do uso de canabidiol.</p>
+<p align="center">É um site de agendamento feito com as funcionalidades em backend, node e javascript. A clínica conecta agendamento do paciente com um médico especializado para tratamento terapêutico e após consulta liberação de receita para a compra de medicamento medicinal.</p>
 
 ## Problema 🧠
-Encontrar especialistas e que pessoas que fazem uso desse tratamento médico e terapêutico
+Identifique a necessidade de pessoas que fazem o uso terapêutico medicinal com uso através da cannabis em específico o uso de(CDB e THC). Embora mais de 6 milhões de pessoas possam se beneficiar desse tratamento à base de cannabis, o acesso a médicos especializados e às receitas para óleos de cannabis ainda é limitado.
+A dificuldade dessas pessoas de encontrar especialistas nesta aréa e ter acesso a receita para compra destes medicamentos autorizados. 
 
 ## Solução ✨
-Permitir que os usuários tenham acesso rápido a profissionais e após diagnóstico ter acesso liberado a receitas médicas e consequetemente a compra deste medicamento e tornar esse tratamento mais democrático.
+Permitir que os usuários encontre de forma rápida profissionais e tenham acesso a profissionais autorizados e após diagnóstico ter acesso liberado a receitas médicas e consequentemente a compra deste medicamento e tornar esse tratamento mais democrático.
+
+![UML](img.jpg)
+<img src="/assets/uml.jpg/">
 
 ## 🛠 Habilidades **Back-end:** 
-Node, Javascript, Testes e Jest.
+UML, Node, Javascript, Testes e Jest --coverage.
 
 ### Features
 

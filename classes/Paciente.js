@@ -7,6 +7,8 @@ export class Paciente {
     receitaLiberada = 0;
     receita = [];
 
+    static pacientes = [];
+
     constructor(nomeCompleto, idade, email, medico) {
         this.nomeCompleto = nomeCompleto;
         this.idade = idade;
@@ -15,28 +17,20 @@ export class Paciente {
         Paciente.pacientes.push({nomeCompleto, idade, email, medico: medico ? medico.nomeMedico : null});
     }
 
-
     marcarConsulta() {
         if(this.idade >= 18) {
             this.consultaMarcada++;
             return 'Consulta marcada com sucesso';
-    
+
         } else {
             throw "Consulta só pode ser marcada se a idade for acima de 18 anos"
         }
-
-        // if(!(Medico instanceof Medico)){
-        //     console.log("O parâmetro é inválido")
-        // }
     } 
 
     agendarConsulta() {
        if (this.numeroConsultas === 0) {
             throw new Error('Paciente não marcou consulta');
-    }
-    //    } else {
-    //         console.log('Médico não possui paciente');
-    //    }
+        }
     }
 
     liberarReceita() {
@@ -47,7 +41,6 @@ export class Paciente {
             this.receitaLiberada++;
                 console.log('Receita liberada para o uso de óleo CDB.');
                 console.log('Receita:', novaReceita);
-            // console.log(`Receita liberada para paciente ${this.paciente1}`);
            } else {
             console.log(`Paciente não agendou ${this.nomeCompleto}`);
            }
@@ -69,9 +62,4 @@ export class Paciente {
     }
 } 
 
-    // requestPaciente(paciente, senha){
-    //     if(senha !== this.senha){
-    //         console.log('Senha inválida');
-    //         return;
-    //     }
-    // }
+   
