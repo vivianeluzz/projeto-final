@@ -13,7 +13,7 @@ A dificuldade dessas pessoas de encontrar especialistas nesta aréa e ter acesso
 ## Solução ✨
 Permitir que os usuários encontre de forma rápida profissionais e tenham acesso a profissionais autorizados e após diagnóstico ter acesso liberado a receitas médicas e consequentemente a compra deste medicamento e tornar esse tratamento mais democrático.
 
-![UML](img.jpg)
+![UML]
 <img src="/img/uml.jpg/">
 
 ## 🛠 Habilidades **Back-end:** 
@@ -31,6 +31,10 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
+
+![Testes jest --coverage]
+<img src="/img/testes.jpg/">
+
 ### 🎲 Rodando o Back End (servidor)
 
 # Clone este repositório
@@ -47,5 +51,9 @@ Para rodar os testes, rode o seguinte comando:
 ## 🔗 Meus Links
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/viviane-luz/)
+
+## 🔗 Link da apresentação
+
+[![presentation](https://docs.google.com/presentation/d/1ahQrSVO68WVBmn3bYXZEphVdJ0qfL-JxVF7uxAfishM/edit#slide=id.g2a3ff85a269_0_1])
 
 Espero que  tenha curtido! 💜
