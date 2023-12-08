@@ -1,9 +1,10 @@
-# Olá, eu sou Viviane Luz e esse é o projeto de conclusão Reprograma.
+# Olá, sou Viviane Luz ✋🏾  
+# Esse é o meu projeto de conclusão imersão JavaScript.
 
-# Imersão JavaScript Projeto-final 🚀 Descrição#
-<h1 align="center"> Clínica Green Care</h1>
-Projeto final de conclusão do curso de imersão javaScript Reprograma! 
+# 🚀 Descrição
+<h1 align="center">Projeto final de conclusão do curso de imersão javaScript Reprograma!</h1> 
 
+Clínica Green Care
 <p align="center">É um site de agendamento feito com as funcionalidades em backend, node e javascript. A clínica conecta agendamento do paciente com um médico especializado para tratamento terapêutico e após consulta liberação de receita para a compra de medicamento medicinal.</p>
 
 ## Problema 🧠
