@@ -14,7 +14,7 @@ A dificuldade dessas pessoas de encontrar especialistas nesta aréa e ter acesso
 Permitir que os usuários encontre de forma rápida profissionais e tenham acesso a profissionais autorizados e após diagnóstico ter acesso liberado a receitas médicas e consequentemente a compra deste medicamento e tornar esse tratamento mais democrático.
 
 ![UML](img.jpg)
-<img src="/assets/uml.jpg/">
+<img src="/img/uml.jpg/">
 
 ## 🛠 Habilidades **Back-end:** 
 UML, Node, Javascript, Testes e Jest --coverage.
